@@ -7,7 +7,7 @@ body {
 }
 
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     height: 4000px;
 }
 
@@ -20,7 +20,7 @@ html {
     margin: 2rem 0 0 0;
     font-family: "Eras IT C";
     font-weight: 300;
-    z-index: 1;
+    z-index: 10;
     user-select: none;
 }
 
@@ -479,6 +479,8 @@ html {
     background: url("images/main-photo.jpg") left 10% bottom 50% / cover no-repeat border-box;
     width: 100%;
     height: 1000px;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .tickets__top {
@@ -505,6 +507,7 @@ html {
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
+    z-index: 1;
 }
 
 .tickets__left--item__top {
@@ -546,6 +549,7 @@ html {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    z-index: 1;
 }
 
 .tickets__bottom form {
@@ -577,6 +581,11 @@ html {
     height: 60px;
     outline: none;
     border: none;
+    background-color: white;
+    color: #9d9d9d;
+    font-family: "Eras IT C";
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .quantity {
@@ -594,6 +603,8 @@ html {
     background-color: #7900ff;
     color: white;
     margin: 0;
+    user-select: none;
+    cursor: pointer;
 }
 
 #number {
@@ -614,6 +625,8 @@ html {
     background-color: #7900ff;
     color: white;
     margin: 0;
+    user-select: none;
+    cursor: pointer;
 }
 
 .tickets__bottom h1 {
@@ -634,6 +647,7 @@ html {
 .btn {
     width: 418px;
     height: 63px;
+    margin-top: 1.5rem;
     background-color: #7900ff;
     color: #ffffff;
     font-family: "Eras IT C";
@@ -643,6 +657,7 @@ html {
     overflow: hidden;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .btn::before {
@@ -670,6 +685,51 @@ html {
         transform: translateX(30rem) skewX(-55deg);
     }
 
+}
+
+.animation__right {
+    transform: rotate(115deg) translateY(-70rem);
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: red;
+
+    animation: weba 1.5s ease 2s forwards;
+}
+
+.animation__right h1 {
+    position: absolute;
+    z-index: 10;
+    transform: rotate(180deg) translate(-25%, -60%);
+    font-size: 25rem;
+    font-family: "Museo Cyrl";
+    color: #d6d6d6;
+}
+
+#line__text {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background-color: #e8e8e8;
+    z-index: -1;
+}
+
+#main__line {
+    position: absolute;
+    background-color: #370273;
+    height: 65px;
+    width: 3000px;
+}
+
+@keyframes weba {
+    0% {
+        transform: rotate(115deg) translateY(-70rem);
+    }
+
+    100% {
+        transform: rotate(115deg) translateY(-17rem);
+    }
 }
 
 

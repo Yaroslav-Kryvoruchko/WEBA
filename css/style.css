@@ -14,15 +14,15 @@
 }
 
 .dash .digit {
-	font-size: 50pt;
+	font-family: "Museo Cyrl";
+	font-size: 5rem;
 	font-weight: normal;
 	float: left;
 	width: 55px;
 	line-height: 55px;
 	padding-top: 15px;
 	text-align: center;
-	font-family: Tahoma, Geneva, sans-serif;
-	color: #555;
+	color: white;
 	position: relative;
 }
 
@@ -35,4 +35,13 @@
 	color: #555;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	font-family: "Museo Cyrl";
+}
+
+.h2__time {
+	text-align: left;
+	width: 100%;
+	margin: 2rem 0 0 3.5rem;
+	color: white;
+	font-size: 1.2rem;
 }
