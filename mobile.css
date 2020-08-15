@@ -1,0 +1,97 @@
+
+/* Header website */
+
+.mobile__menu {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: center;
+}
+
+.mobile__button {
+    width: 100px;
+    height: 50px;
+    z-index: 10;
+}
+
+.mobile__btn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+    height: 100%;
+    border: none;
+    background-color: #5e00c7;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn__line {
+    position: relative;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.btn__line::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: white;
+}
+
+.btn__line::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: white;
+}
+
+.mobile__botton {
+    width: 100px;
+    height: 100%;
+    transform: translateY(-120%);
+    transition: transform 0.3s ease 0s;
+}
+
+.mobile__menu__items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+    text-align: center;
+}
+
+.mobile__menu__item {
+    background-color: #5e00c7;
+    width: 100%;
+    padding: 1rem;
+}
+
+.mobile__menu__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.anim {
+    transform: translateY(-7%);
+    transition: transform 0.5s ease 0s;
+}
+
+@media (min-width: 1125px) {
+    .mobile__menu {
+        display: none;
+    }
+}

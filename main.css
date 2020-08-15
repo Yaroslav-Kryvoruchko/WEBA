@@ -17,7 +17,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2rem 0 0 0;
+    margin: 4rem 0 0 0;
     font-family: "Eras IT C";
     font-weight: 300;
     z-index: 10;
@@ -46,6 +46,11 @@ html {
     font-size: 1.75rem;
 }
 
+.left-header__item:hover {
+    background-color: white;
+    color: #5e00c7;
+}
+
 .weba__item {
     color: white;
     background-color: black;
@@ -53,9 +58,18 @@ html {
     padding: 0.6rem;
 }
 
+.weba__item:hover {
+    background-color: black;
+    color: white;
+}
+
 .right-header__items {
     list-style: none;
     margin: 0 2rem 0 0;
+}
+
+.right-header__items a {
+    text-decoration: none;
 }
 
 .right-header__item {
@@ -84,7 +98,7 @@ html {
 #sec-1 {
     background: url('images/main-photo.jpg') left 10% bottom 70% / cover no-repeat border-box;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     position: relative;
     top: 0%;
     display: flex;
@@ -189,7 +203,7 @@ html {
 
 .about__top {
     width: 100%;
-    height: 250px;
+    height: 230px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -200,6 +214,10 @@ html {
     list-style: none;
     margin: 0 2rem 0 0;
     padding: 0;
+}
+
+.about__top--items a {
+    text-decoration: none;
 }
 
 /* .about__top--item {
@@ -223,6 +241,29 @@ html {
     padding: 0.5rem;
     margin: 0.5rem;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.right__tickets:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    animation: ticket 0.5s ease 0s infinite;
+}
+
+@keyframes ticket {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .about__center {
@@ -334,10 +375,25 @@ html {
     font-size: 1.5rem;
     color: #e2e2e2;
     border: none;
-    padding: 0.5rem;
+    padding: 0.4rem;
     margin: 0.5rem 0;
     background-color: #5100ab;
     outline: none;
+    cursor: pointer;
+    border: 1px solid #5100ab;
+
+    transition: color 0.5s ease 0s,
+                background-color 0.5s ease 0s;
+}
+
+.about__bottom--right button:hover {
+    color: #5100ab;
+    background-color: white;
+    border: 1px solid #5100ab;
+
+    transition: color 0.3s ease,
+                background-color 0.3s ease,
+                border 0.3s ease;
 }
 
 #sec-4 {
@@ -420,11 +476,13 @@ html {
     font-family: "Bebas Neue Cyrillic";
     margin: 0;
     height: 150px;
+    user-select: none;
 }
 
 .comments__items {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
 }
 
 .comments__item {
@@ -478,9 +536,10 @@ html {
 #sec-5 {
     background: url("images/main-photo.jpg") left 10% bottom 50% / cover no-repeat border-box;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     overflow: hidden;
     z-index: 2;
+    padding: 0 0 5rem 0;
 }
 
 .tickets__top {
@@ -613,7 +672,7 @@ html {
     font-size: 1.8rem;
     color: #9d9d9d;
     background-color: white;
-    padding: 0.2rem 1rem 0.2rem 1rem;
+    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
     margin: 0;
 }
 
@@ -688,7 +747,7 @@ html {
 }
 
 .animation__right {
-    transform: rotate(115deg) translateY(-70rem);
+    transform: rotate(115deg) translateY(-80rem);
     z-index: -1;
     display: flex;
     align-items: flex-end;
@@ -705,11 +764,12 @@ html {
     font-size: 25rem;
     font-family: "Museo Cyrl";
     color: #d6d6d6;
+    user-select: none;
 }
 
 #line__text {
     position: absolute;
-    width: 2000px;
+    width: 100%;
     height: 2000px;
     background-color: #e8e8e8;
     z-index: -1;
@@ -718,17 +778,17 @@ html {
 #main__line {
     position: absolute;
     background-color: #370273;
-    height: 65px;
-    width: 3000px;
+    height: 70px;
+    width: 100%;
 }
 
 @keyframes weba {
     0% {
-        transform: rotate(115deg) translateY(-70rem);
+        transform: rotate(115deg) translateY(-80rem);
     }
 
     100% {
-        transform: rotate(115deg) translateY(-17rem);
+        transform: rotate(115deg) translateY(-12rem);
     }
 }
 

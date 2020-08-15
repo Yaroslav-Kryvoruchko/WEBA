@@ -32,4 +32,14 @@ function out(result) {
 }
 
 
+// Mobile menu
+
+const BtnMenu = document.querySelector('.mobile__btn');
+const Menu = document.querySelector('.mobile__botton');
+
+BtnMenu.addEventListener('click', () => {
+    Menu.classList.toggle('anim');
+})
+
+
 
