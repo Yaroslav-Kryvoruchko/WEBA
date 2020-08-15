@@ -42,4 +42,22 @@ BtnMenu.addEventListener('click', () => {
 })
 
 
+//coments
+
+const OneComit = document.getElementById("one__item");
+const TwoComit = document.getElementById("two__item");
+
+function comit() {
+
+    for(let i = 1; i < 5; i++) {
+        if(i === 1) {
+            OneComit.style.display = "none";
+        }else if (i === 2) {
+            TwoComit.style.display = "flex";
+        }
+        console.log(i);
+    }
+}
+
+comit();
 

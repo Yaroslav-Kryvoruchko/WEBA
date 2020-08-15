@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Eraslght";
+    src: url(fonts/ERASLGHT.TTF);
+}
+
+@font-face {
+    font-family: "MuseoCyrl500";
+    src: url(fonts/Museo\ Cyrl\ 500.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -14,11 +24,11 @@ html {
 #header {
     width: 100%;
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     margin: 4rem 0 0 0;
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     z-index: 10;
     user-select: none;
@@ -75,9 +85,9 @@ html {
 .right-header__item {
     color: white;
     background-color: black;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: background-color 0.5s ease 0s,
                 color 0.5s ease 0s;
 }
@@ -103,8 +113,8 @@ html {
     top: 0%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    font-family: "Museo Cyrl";
+    justify-content: center;
+    font-family: "MuseoCyrl500";
     font-weight: 300;
 }
 
@@ -116,7 +126,7 @@ html {
     width: 574px;
     height: 489px;
     background-color: white;
-    margin: 5rem 10rem 0 0;
+    margin: 0;
 }
 
 .main-item {
@@ -144,42 +154,58 @@ html {
     padding: 0;
 }
 
+@media (min-width: 1125px) {
+    #sec-1  {
+        justify-content: flex-end;
+    }
+
+    .main-items {
+        margin: 5rem 15rem 0 0;
+    }
+}
+
 #sec-2 {
     width: 100%;
-    height: 6.3rem;
+    height: 100%;
     background-color: #5100ab;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: static;
 }
 
 .main-input__items {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 3rem 0;
 }
 
 .main-input__items input {
     padding: 0.5rem;
     background-color: #e6e6e6;
     border: none;
-    margin: 0 0.5rem;
-    font-size: 1.6rem;
+    margin: 1rem 0.5rem;
+    font-size: 2rem;
     width: 10rem;
-    width: 212px;
-    height: 60px;
+    width: 500px;
+    height: 80px;
+    font-family: "Eraslght";
+    font-weight: 300;
 }
 
 .main-input__items button {
     border: none;
     background-color: #370273;
     color: white;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     padding: 0.5rem 2rem;
-    width: 212px;
-    height: 60px;
+    width: 500px;
+    height: 80px;
     cursor: pointer;
+    font-family: "Eraslght";
+    font-weight: 300;
+
     transition: background-color 0.5s ease 0s,
                 color 0.5s ease 0s;
 }
@@ -196,9 +222,28 @@ html {
                 color 0.3s ease 0s;
 }
 
+@media (min-width: 1125px) {
+    .main-input__items {
+        flex-direction: row;
+    }
+
+    .main-input__items input {
+        margin: 0 0.5rem;
+        font-size: 1.6rem;
+        width: 212px;
+        height: 60px;
+    }
+
+    .main-input__items button {
+        font-size: 2rem;
+        width: 212px;
+        height: 60px;
+    }
+}
+
 #sec-3 {
     width: 100%;
-    /* height: 750px; */
+    height: 100%;
 }
 
 .about__top {
@@ -227,7 +272,7 @@ html {
 .left__about {
     background-color: #282828;
     color: #ededed;
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 4.3rem;
     padding: 0.5rem;
     width: 600px;
@@ -238,10 +283,12 @@ html {
 .right__tickets {
     color: white;
     background-color: black;
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
+    font-family: "Eraslght";
+    font-weight: 300;
 }
 
 .right__tickets:hover {
@@ -297,14 +344,14 @@ html {
 .about__center--right h3 {
     width: 50%;
     margin: 0;
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 2.8rem;
     font-weight: normal;
 }
 
 .about__center--right p {
     margin: 0.3rem 0;
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.5rem;
 }
@@ -316,11 +363,6 @@ html {
     border: 7px solid black;
     transform: translate(-13%, 10%);
     z-index: -1;
-}
-
-#sec-3 {
-    width: 100%;
-    height: 1300px;
 }
 
 .about__bottom--items {
@@ -354,7 +396,7 @@ html {
 }
 
 .about__bottom--right h3 {
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-weight: 300;
     font-size: 2.3rem;
     margin: 0;
@@ -363,14 +405,14 @@ html {
 
 .about__bottom--right p {
     margin: 0;
-    width: 90%;
-    font-family: "Eras IT C";
+    width: 80%;
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.1rem;
 }
 
 .about__bottom--right button {
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.5rem;
     color: #e2e2e2;
@@ -409,7 +451,7 @@ html {
     padding: 0.5rem;
     width: 600px;
     text-align: right;
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
 }
 
 .portfolio--items {
@@ -432,7 +474,7 @@ html {
 }
 
 .portfolio--item h3 {
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 2.3rem;
     font-weight: normal;
     margin: 0 0 0.5rem 0;
@@ -441,7 +483,7 @@ html {
 .portfolio--item button {
     background-color: #5100ab;
     color: #e2e2e2;
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.5rem;
     border: none;
@@ -494,13 +536,13 @@ html {
 }
 
 .comments__item h1 {
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 2.3rem;
     margin-bottom: 0;
 }
 
 .comments__item p {
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.5rem;
 }
@@ -533,6 +575,10 @@ html {
     display: none;
 }
 
+.open {
+    display: flex !important;
+}
+
 #sec-5 {
     background: url("images/main-photo.jpg") left 10% bottom 50% / cover no-repeat border-box;
     width: 100%;
@@ -549,7 +595,7 @@ html {
     padding: 0.5rem;
     width: 600px;
     text-align: right;
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     margin-bottom: 5rem;
 }
 
@@ -580,27 +626,29 @@ html {
 }
 
 .tickets__left--item__top h2 {
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 2.5rem;
     color: #ffffff;
     background-color: #5e00c7;
     width: 100%;
     height: 66px;
-    padding: 0.5rem;
+    padding: 0.5rem 0 0.5rem 3rem;
 } 
 
 .tickets__left--item__top h1 {
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 5.75rem;
     color: black;
-    margin: 0 auto;
+    margin: 0;
+    text-align: left;
+    width: 80%;
 }
 
 .tickets__left--item__top p {
-    font-family: "Eras IT C";
-    font-weight: 300;
+    font-family: "Eraslght";
     font-size: 1.5rem;
-    width: 90%;
+    font-weight: 300;
+    width: 80%;
 }
 
 .tickets__bottom {
@@ -619,7 +667,7 @@ html {
 }
 
 .tickets__bottom label {
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.8rem;
     color: #370273;
@@ -642,7 +690,7 @@ html {
     border: none;
     background-color: white;
     color: #9d9d9d;
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-size: 1.5rem;
     font-weight: 300;
 }
@@ -655,7 +703,7 @@ html {
 }
 
 #plas {
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.8rem;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
@@ -667,7 +715,7 @@ html {
 }
 
 #number {
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.8rem;
     color: #9d9d9d;
@@ -677,7 +725,7 @@ html {
 }
 
 #minus {
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.8rem;
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
@@ -689,14 +737,14 @@ html {
 }
 
 .tickets__bottom h1 {
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 6.5rem;
     color: #370273;
     margin: 0;
 }
 
 .tickets__bottom p{
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     font-size: 2rem;
     color: #370273;
     margin-bottom: 0;
@@ -709,7 +757,7 @@ html {
     margin-top: 1.5rem;
     background-color: #7900ff;
     color: #ffffff;
-    font-family: "Eras IT C";
+    font-family: "Eraslght";
     font-weight: 300;
     font-size: 2rem;
     position: relative;
@@ -762,7 +810,7 @@ html {
     z-index: 10;
     transform: rotate(180deg) translate(-25%, -60%);
     font-size: 25rem;
-    font-family: "Museo Cyrl";
+    font-family: "MuseoCyrl500";
     color: #d6d6d6;
     user-select: none;
 }

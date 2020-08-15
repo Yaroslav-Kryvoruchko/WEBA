@@ -2,11 +2,14 @@
 /* Header website */
 
 .mobile__menu {
-    width: 90%;
+    width: 20%;
+    right: 0;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-items: center;
+    z-index: 10;
 }
 
 .mobile__button {
@@ -19,8 +22,8 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    width: 100px;
-    height: 100%;
+    width: 125px;
+    height: 125px;
     border: none;
     background-color: #5e00c7;
     color: white;
@@ -30,7 +33,7 @@
 
 .btn__line {
     position: relative;
-    width: 40px;
+    width: 50px;
     height: 2px;
     background-color: white;
     margin: 0 auto;
@@ -70,14 +73,20 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    width: 100px;
+    width: 125px;
     text-align: center;
 }
 
 .mobile__menu__item {
     background-color: #5e00c7;
     width: 100%;
+    height: 100px;
     padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
 }
 
 .mobile__menu__item a {
@@ -86,7 +95,7 @@
 }
 
 .anim {
-    transform: translateY(-7%);
+    transform: translateY(13%);
     transition: transform 0.5s ease 0s;
 }
 
@@ -94,4 +103,12 @@
     .mobile__menu {
         display: none;
     }
+
+    #header {
+        display: flex;
+    }
+}
+
+.hidden {
+    display: none;
 }
