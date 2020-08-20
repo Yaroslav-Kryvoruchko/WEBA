@@ -508,8 +508,10 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
-    width: 100%;
+    /* margin-top: 10rem; */
+    margin: 0 auto;
+    width: 700px;
+    overflow: hidden;
 }
 
 .comment__quotes {
@@ -522,17 +524,100 @@ html {
 }
 
 .comments__items {
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    overflow: hidden;
+    width: 700px;
+    height: 200px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    animation: coment 20s linear 2s infinite;
+
+}
+
+@keyframes coment {
+    0% {
+        transform: translateX(0%);
+    }
+
+    5% {
+        transform: translateX(-100%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-200%);    
+    }
+
+    50% {
+        transform: translateX(-200%);    
+    }
+    
+    55% {
+        transform: translateX(-300%);    
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .comments__item {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+}
+
+/* #one__item {
+
+}  */
+
+#two__item {
+    transform: translateX(100%);
+
+}
+
+#tree__item {
+    transform: translateX(200%);
+    
+}
+
+#four__item {
+    transform: translateX(300%);
+    
+}
+
+.open__cub {
+    animation: cubes 2s ease 0s forwards;
+}
+
+@keyframes cubes {
+    0% {
+        width: 16px;
+        height: 16px;
+        background-color: #acacac;
+    }
+    
+    100% {
+        width: 24px;
+        height: 24px;
+        background-color: #7900ff;
+    }
 }
 
 .comments__item h1 {
@@ -559,24 +644,6 @@ html {
     height: 16px;
     background-color: #acacac;
     margin: 0.5rem 1rem;
-}
-
-#active__cube {
-    width: 24px;
-    height: 24px;
-    background-color: #7900ff;
-}
-
-#one__item {
-    display: flex;
-}
-
-#two__item {
-    display: none;
-}
-
-.open {
-    display: flex !important;
 }
 
 #sec-5 {
@@ -702,6 +769,11 @@ html {
     margin-top: 1rem;
 }
 
+.quantity input {
+    width: 55%;
+    height: 50%;
+}
+
 #plas {
     font-family: "Eraslght";
     font-weight: 300;
@@ -728,7 +800,7 @@ html {
     font-family: "Eraslght";
     font-weight: 300;
     font-size: 1.8rem;
-    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    padding: 0.2rem 0.7rem 0.2rem 0.7rem;
     background-color: #7900ff;
     color: white;
     margin: 0;
@@ -802,7 +874,7 @@ html {
     justify-content: center;
     color: red;
 
-    animation: weba 1.5s ease 2s forwards;
+    animation: weba 1.5s ease 0s forwards;
 }
 
 .animation__right h1 {

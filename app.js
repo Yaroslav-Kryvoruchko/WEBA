@@ -3,12 +3,11 @@ let Minus = document.getElementById('minus');
 
 let Number = document.getElementById('number');
 
-Plas.addEventListener('click', plas)
+Plas.addEventListener('click', plas);
 
-Minus.addEventListener('click', minus)
+Minus.addEventListener('click', minus);
 
 let i = 0;
-console.log(i);
 
 function plas() {
     if(i <= 9) {
@@ -28,7 +27,6 @@ function minus() {
 
 function out(result) {
     Number.textContent = result;
-
 }
 
 
@@ -42,22 +40,6 @@ BtnMenu.addEventListener('click', () => {
 })
 
 
-//coments
 
-const OneComit = document.getElementById("one__item");
-const TwoComit = document.getElementById("two__item");
 
-function comit() {
-
-    for(let i = 1; i < 5; i++) {
-        if(i === 1) {
-            OneComit.style.display = "none";
-        }else if (i === 2) {
-            TwoComit.style.display = "flex";
-        }
-        console.log(i);
-    }
-}
-
-comit();
 
