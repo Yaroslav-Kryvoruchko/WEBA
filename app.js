@@ -32,11 +32,19 @@ function out(result) {
 
 // Mobile menu
 
-const BtnMenu = document.querySelector('.mobile__btn');
-const Menu = document.querySelector('.mobile__botton');
 
-BtnMenu.addEventListener('click', () => {
-    Menu.classList.toggle('anim');
+const menuBtn = document.querySelector('.menu-btn');
+
+let menuOpen = false;
+
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
 })
 
 

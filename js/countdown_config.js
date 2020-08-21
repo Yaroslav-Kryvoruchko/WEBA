@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
     $('#countdown_dashboard').countDown({
 					targetDate: {
 						'day': 		15,
-						'month': 	08,
+						'month': 	10,
 						'year': 	2020,
 						'hour': 	23,
 						'min': 		59,
