@@ -457,6 +457,38 @@ html {
                 border 0.3s ease;
 }
 
+.about__center--left.is-visible {
+    animation: about__center--left 2s ease 0s forwards;
+}
+
+.about__center--right.is-visible {
+    animation: about__center--right 2s ease 0s forwards;
+}
+
+@keyframes about__center--left {
+    0% {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes about__center--right {
+    0% {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 #sec-4 {
     background: url('images/portfolio-photo.jpg') left 10% bottom 70% / cover no-repeat border-box;
     width: 100%;
@@ -691,6 +723,9 @@ html {
     width: 495px;
     height: 322px;
     background-color: white;
+
+    transform: translateX(-25%);
+    opacity: 0;
 }
 
 .tickets__left--item__top h2 {
@@ -719,12 +754,41 @@ html {
     width: 80%;
 }
 
+.timer {
+    transform: translateX(-25%);
+    opacity: 0;
+}
+
+
+.tickets__left--item__top.is-visible {
+    animation: left-tickets 2s ease 0s forwards;
+}
+
+.timer.is-visible {
+    animation: left-tickets 2s ease 0s forwards;
+}   
+
+@keyframes left-tickets {
+    0% {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 .tickets__bottom {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     z-index: 1;
+
+    transform: translateX(25%);
+    opacity: 0;
 }
 
 .tickets__bottom form {
@@ -757,7 +821,7 @@ html {
     outline: none;
     border: none;
     background-color: white;
-    color: #9d9d9d;
+    color: #5f5e5e;
     font-family: "Eraslght";
     font-size: 1.5rem;
     font-weight: 300;
@@ -867,15 +931,32 @@ html {
 
 }
 
+.tickets__bottom.is-visible {
+    animation: right-tickets 2s ease 0s forwards;
+}
+
+@keyframes right-tickets {
+    0% {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
 .animation__right {
-    transform: rotate(115deg) translateY(-80rem);
+    transform: rotate(115deg) translateY(-10rem);
     z-index: -1;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    color: red;
+}
 
-    animation: weba 1.5s ease 0s forwards;
+.animation__right.is-visible {
+    animation: weba 2s ease forwards;
 }
 
 .animation__right h1 {
