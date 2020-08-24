@@ -1,32 +1,35 @@
 let Plas = document.getElementById('plas');
 let Minus = document.getElementById('minus');
-
 let Number = document.getElementById('number');
+const ErrorAlert = document.querySelector('.alert-message');
 
 Plas.addEventListener('click', plas);
-
 Minus.addEventListener('click', minus);
 
 let i = 0;
 
 function plas() {
     if(i <= 9) {
-        let p = i + 1;
         i++;
-        out(p);
+        out(i);
     }
 }
 
 function minus() {
     if(i <= 10) {
-        let m = i - 1;
         i--;
-        out(m);
+        out(i);
     }
 }
 
 function out(result) {
     Number.textContent = result;
+    if(result < 0) {
+      Number.textContent = 0;
+      ErrorAlert.classList.add('open-error');
+    } else if(result > 0) {
+      ErrorAlert.classList.remove('open-error');
+    }
 }
 
 
@@ -34,17 +37,26 @@ function out(result) {
 
 
 const menuBtn = document.querySelector('.menu-btn');
+const Menu = document.querySelector('.mobile-menu__item');
+const Item = document.querySelector('.menu-items');
 
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
+        Menu.classList.add('open--menu');
         menuOpen = true;
     } else {
         menuBtn.classList.remove('open');
+        Menu.classList.remove('open--menu');
         menuOpen = false;
     }
+})
+
+Item.addEventListener('click', () => {
+  Menu.classList.remove('open--menu');
+  menuBtn.classList.remove('open');
 })
 
 //scroll

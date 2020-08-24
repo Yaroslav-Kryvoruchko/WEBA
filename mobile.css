@@ -66,6 +66,32 @@
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.mobile-menu__item {
+    transform: translateX(150%);
+    transition: transform 0.5s ease 0s;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    background-color: #5e00c7;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.open--menu {
+    transform: translateX(0%);
+}
+
 @media (min-width: 1125px) {
     .mobile__menu {
         display: none;
