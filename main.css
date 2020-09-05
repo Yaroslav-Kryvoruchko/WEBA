@@ -112,6 +112,7 @@ html {
     position: relative;
     top: 0%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-family: "MuseoCyrl500";
@@ -176,11 +177,11 @@ html {
 
 @media (min-width: 1125px) {
     #sec-1  {
-        justify-content: flex-end;
+        justify-content: space-between;
     }
 
     .main-items {
-        margin: 5rem 15rem 0 0;
+        margin: 5rem 0rem 0 0;
     }
 }
 
@@ -517,6 +518,14 @@ html {
     height: 100%;
 }
 
+.backdrop_portfolio {
+    position: absolute;
+    width: 100%;
+    height: 1110px;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
 .portfolio-name__sec {
     background-color: #282828;
     color: white;
@@ -525,6 +534,8 @@ html {
     width: 600px;
     text-align: right;
     font-family: "MuseoCyrl500";
+    z-index: 2;
+    position: relative;
 }
 
 .portfolio--items {
@@ -533,6 +544,8 @@ html {
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
+    z-index: 2;
+    position: relative;
 }
 
 .portfolio--item {
@@ -586,6 +599,8 @@ html {
     margin: 0 auto;
     width: 700px;
     overflow: hidden;
+    z-index: 2;
+    position: relative;
 }
 
 .comment__quotes {
@@ -1078,6 +1093,110 @@ html {
     .animation__right h1 {
         font-size: 25rem;
     }
+}
+
+#footer {
+    background-color: #210145;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
+}
+
+.footer_item_one h2 {
+    color: #ab9eb8;
+    font-family: "MuseoCyrl500";
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+#inp {
+    width: 323px;
+    height: 49px;
+    background-color: #fafafa;
+    font-size: 22px;
+    color: #919191;
+    font-weight: 300;
+    font-family: "Eraslght";
+    outline: none;
+    border: none;
+}
+
+.footer_item_one button {
+    width: 84px;
+    height: 49px;
+    background-color: #7900ff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.footer_item_two {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+}
+
+.footer_item_two--items {
+    list-style: none;
+}
+
+.item-menu {
+    color: #919191;
+    font-family: 'Eraslght';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.item-social {
+    color: #919191;
+    font-family: 'Eraslght';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.footer_item_two--items a {
+    color: #919191;
+    font-family: 'Eraslght';
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer_item_two--items li {
+    margin: 0.5rem 0;
+}
+
+.footer_item_two button {
+    border: none;
+    background-color: #7900ff;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.certification {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #919191;
+    font-family: 'Eraslght';
 }
 
 

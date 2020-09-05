@@ -2,8 +2,8 @@ jQuery(document).ready(function() {
     
     $('#countdown_dashboard').countDown({
 					targetDate: {
-						'day': 		15,
-						'month': 	10,
+						'day': 		29,
+						'month': 	09,
 						'year': 	2020,
 						'hour': 	23,
 						'min': 		59,

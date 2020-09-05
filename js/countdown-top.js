@@ -1,27 +1,3 @@
-/*!
- * jQuery Countdown plugin v0.9.5
- * http://www.littlewebthings.com/projects/countdown/
- *
- * Copyright 2010, Vassilis Dourdounis
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
 (function($){
 
 	$.fn.countDown = function (options) {
@@ -32,7 +8,7 @@
 
 		diffSecs = this.setCountDown(config);
 
-		$('#' + $(this).attr('id') + ' .digit').html('<div class="top"></div><div class="bottom"></div>');
+		$('#' + $(this).attr('id') + ' .digit_top').html('<div class="top"></div><div class="bottom"></div>');
 		$(this).doCountDown($(this).attr('id'), diffSecs, 500);
 
 		if (config.onComplete)
@@ -111,11 +87,11 @@
 			weeks = Math.floor(diffSecs/60/60/24/7);
 		}
 
-		$this.dashChangeTo(id, 'seconds_dash', secs, duration ? duration : 800);
-		$this.dashChangeTo(id, 'minutes_dash', mins, duration ? duration : 1200);
-		$this.dashChangeTo(id, 'hours_dash', hours, duration ? duration : 1200);
-		$this.dashChangeTo(id, 'days_dash', days, duration ? duration : 1200);
-		$this.dashChangeTo(id, 'weeks_dash', weeks, duration ? duration : 1200);
+		$this.dashChangeTo(id, 'seconds_dash_top', secs, duration ? duration : 800);
+		$this.dashChangeTo(id, 'minutes_dash_top', mins, duration ? duration : 1200);
+		$this.dashChangeTo(id, 'hours_dash_top', hours, duration ? duration : 1200);
+		$this.dashChangeTo(id, 'days_dash_top', days, duration ? duration : 1200);
+		$this.dashChangeTo(id, 'weeks_dash_top', weeks, duration ? duration : 1200);
 
 		$.data($this[0], 'diffSecs', diffSecs);
 		if (diffSecs > 0)
@@ -138,8 +114,8 @@
 
 		if ($('#' + $this.attr('id') + ' .' + dash))
 		{
-			$this.digitChangeTo('#' + $this.attr('id') + ' .' + dash + ' .digit:first', d1, duration);
-			$this.digitChangeTo('#' + $this.attr('id') + ' .' + dash + ' .digit:last', d2, duration);
+			$this.digitChangeTo('#' + $this.attr('id') + ' .' + dash + ' .digit_top:first', d1, duration);
+			$this.digitChangeTo('#' + $this.attr('id') + ' .' + dash + ' .digit_top:last', d2, duration);
 		}
 	};
 
