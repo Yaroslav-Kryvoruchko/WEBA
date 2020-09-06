@@ -2,9 +2,9 @@ jQuery(document).ready(function() {
 				
     $('#countdown_dashboard3').countDown({
 					targetDate: {
-						'day': 		1,
-						'month': 	10,
-						'year': 	2012,
+						'day': 		29,
+						'month': 	09,
+						'year': 	2020,
 						'hour': 	23,
 						'min': 		59,
 						'sec': 		59,	

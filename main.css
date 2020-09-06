@@ -105,18 +105,25 @@ html {
     cursor: pointer;
 } */
 
+@media (min-width: 1125px) {
+
+}
+
 #sec-1 {
     background: url('images/main-photo.jpg') left 10% bottom 70% / cover no-repeat border-box;
     width: 100%;
     height: 1000px;
     position: relative;
-    top: 0%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-family: "MuseoCyrl500";
     font-weight: 300;
+}
+
+.timer_top {
+    margin-top: 5rem;
 }
 
 .main-items {
@@ -127,6 +134,7 @@ html {
     width: 574px;
     height: 489px;
     background-color: white;
+    margin: 5rem 0rem 0 0;
     z-index: 5;
 }
 
@@ -175,16 +183,6 @@ html {
     z-index: 1;
 } */
 
-@media (min-width: 1125px) {
-    #sec-1  {
-        justify-content: space-between;
-    }
-
-    .main-items {
-        margin: 5rem 0rem 0 0;
-    }
-}
-
 #sec-2 {
     width: 100%;
     height: 100%;
@@ -196,7 +194,7 @@ html {
 
 .main-input__items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     padding: 3rem 0;
@@ -206,11 +204,10 @@ html {
     padding: 0.5rem;
     background-color: #e6e6e6;
     border: none;
-    margin: 1rem 0.5rem;
-    font-size: 2rem;
-    width: 10rem;
-    width: 500px;
-    height: 80px;
+    margin: 0 0.5rem;
+    font-size: 1.6rem;
+    width: 212px;
+    height: 60px;
     font-family: "Eraslght";
     font-weight: 300;
 }
@@ -219,10 +216,10 @@ html {
     border: none;
     background-color: #370273;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0.5rem 2rem;
-    width: 500px;
-    height: 80px;
+    width: 212px;
+    height: 60px;
     cursor: pointer;
     font-family: "Eraslght";
     font-weight: 300;
@@ -241,25 +238,6 @@ html {
     color: #370273;
     transition: background-color 0.3s ease 0s,
                 color 0.3s ease 0s;
-}
-
-@media (min-width: 1125px) {
-    .main-input__items {
-        flex-direction: row;
-    }
-
-    .main-input__items input {
-        margin: 0 0.5rem;
-        font-size: 1.6rem;
-        width: 212px;
-        height: 60px;
-    }
-
-    .main-input__items button {
-        font-size: 2rem;
-        width: 212px;
-        height: 60px;
-    }
 }
 
 #sec-3 {
@@ -388,24 +366,24 @@ html {
 
 .about__bottom--items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 5rem auto;
+    margin: 0rem auto;
 }
 
 .about__bottom {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem auto;
-    width: 40%;
+    margin: 10rem auto;
+    width: 30%;
 }
 
 .about__bottom--left img {
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
 }
 
 .about__bottom--right {
@@ -414,7 +392,7 @@ html {
     align-items: flex-start;
     justify-content: flex-end;
     margin-left: 1rem;
-    width: 50%;
+    width: 30%;
 }
 
 .about__bottom--right h3 {
@@ -422,7 +400,7 @@ html {
     font-weight: 300;
     font-size: 2.3rem;
     margin: 0;
-    width: 90%;
+    width: 60%;
 }
 
 .about__bottom--right p {
@@ -492,26 +470,6 @@ html {
     }
 }
 
-@media (min-width: 1125px) {
-    .about__center--right {
-        width: 40%;
-    }
-
-    .about__center--right h3 {
-        width: 50%;
-    }
-
-    .about__bottom--items {
-        flex-direction: row;
-        margin: 0 auto;
-    }
-
-    .about__bottom {
-        margin: 10rem auto;
-        width: 30%;
-    }
-}
-
 #sec-4 {
     background: url('images/portfolio-photo.jpg') left 10% bottom 70% / cover no-repeat border-box;
     width: 100%;
@@ -540,7 +498,7 @@ html {
 
 .portfolio--items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
@@ -557,7 +515,7 @@ html {
     width: 379px;
     height: 331px;
     background-color: #dcdcdc;
-    margin-top: 3rem;
+    margin-top: 7rem;
 }
 
 .portfolio--item h3 {
@@ -715,16 +673,6 @@ html {
     height: 16px;
     background-color: #acacac;
     margin: 0.5rem 1rem;
-}
-
-@media (min-width: 1125px) {
-    .portfolio--items {
-        flex-direction: row;
-    }
-
-    .portfolio--item {
-        margin-top: 7rem;
-    }
 }
 
 #sec-5 {
@@ -1050,7 +998,7 @@ html {
     position: absolute;
     z-index: 10;
     transform: rotate(180deg) translate(-25%, -60%);
-    font-size: 23rem;
+    font-size: 25rem;
     font-family: "MuseoCyrl500";
     color: #d6d6d6;
     user-select: none;
@@ -1058,7 +1006,7 @@ html {
 
 #line__text {
     position: absolute;
-    width: 200%;
+    width: 100%;
     height: 2000px;
     background-color: #e8e8e8;
     z-index: -1;
@@ -1068,7 +1016,7 @@ html {
     position: absolute;
     background-color: #370273;
     height: 70px;
-    width: 200%;
+    width: 100%;
 }
 
 @keyframes weba {
@@ -1078,20 +1026,6 @@ html {
 
     100% {
         transform: rotate(115deg) translateY(-12rem);
-    }
-}
-
-@media (min-width: 1125px) {
-    #line__text {
-        width: 100%;
-    }
-    
-    #main__line {
-        width: 100%;
-    }
-
-    .animation__right h1 {
-        font-size: 25rem;
     }
 }
 

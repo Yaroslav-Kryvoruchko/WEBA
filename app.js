@@ -37,27 +37,22 @@ function out(result) {
 
 
 const menuBtn = document.querySelector('.menu-btn');
-const Menu = document.querySelector('.mobile-menu__item');
-const Item = document.querySelector('.menu-items');
+const Menu = document.querySelector('.mobile--menu');
 
 let menuOpen = false;
 
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
-        Menu.classList.add('open--menu');
+        Menu.classList.add('open_menu');
         menuOpen = true;
     } else {
         menuBtn.classList.remove('open');
-        Menu.classList.remove('open--menu');
+        Menu.classList.remove('open_menu');
         menuOpen = false;
     }
 })
 
-Item.addEventListener('click', () => {
-  Menu.classList.remove('open--menu');
-  menuBtn.classList.remove('open');
-})
 
 //scroll
 

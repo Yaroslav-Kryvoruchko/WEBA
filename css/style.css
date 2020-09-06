@@ -1,4 +1,4 @@
-#countdown_dashboard, #countdown_dashboard2 {
+#countdown_dashboard, #countdown_dashboard2  {
 	width: 545px;
 	margin: 0 auto;
 	height: 110px;
@@ -74,5 +74,49 @@
 	padding-top: 15px;
 	text-align: center;
 	color: white;
+	position: relative;
+}
+
+#countdown_dashboard3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	margin: 0 auto;
+	height: 90px;
+	background-color: black;
+}
+
+.h2__time_menu {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	color: black;
+	font-family: "MuseoCyrl500";
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+.dash_menu {
+	position: relative;
+	width: 115px;
+	height: 100%;
+	background: transparent url('../img/dash.png') 0 0 no-repeat;
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.dash_menu .digit {
+	font-family: "MuseoCyrl500";
+	font-size: 4.5rem;
+	font-weight: normal;
+	float: left;
+	width: 55px;
+	line-height: 55px;
+	padding-top: 15px;
+	text-align: center;
+	color: white;
+	background-color: black;
 	position: relative;
 }
