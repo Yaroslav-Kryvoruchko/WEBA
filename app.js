@@ -97,6 +97,13 @@ function isElementInViewport(el) {
   );
 }
 
+const SeeMore = document.querySelector(".see_more");
+const Test = document.querySelector(".not_visible");
+
+SeeMore.addEventListener('click', () => {
+  Test.classList.add('see_visible');
+  SeeMore.style.display = 'none';
+})
 
 
 

@@ -1,7 +1,15 @@
 #countdown_dashboard, #countdown_dashboard2  {
-	width: 545px;
-	margin: 0 auto;
-	height: 110px;
+	width: 100%;
+	margin: 0 1rem;
+	height: 50px;
+}
+
+@media (min-width:23.5rem) {
+	#countdown_dashboard, #countdown_dashboard2  {
+		width: 545px;
+		margin: 0 auto;
+		height: 110px;
+	}
 }
 
 .dash {
@@ -36,6 +44,7 @@
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-family: "Museo Cyrl";
+	width: 100%;
 }
 
 .h2__time {
@@ -48,33 +57,52 @@
 
 .h2__time_top {
 	text-align: center;
-	width: 55%;
+	width: 100%;
 	margin: 0 auto;
 	color: white;
-	font-size: 4.5rem;
+	font-size: 2rem;
 }
 
 .dash_top {
 	position: relative;
-	width: 115px;
-	height: 114px;
+	width: 75px;
+	height: 90px;
 	background: transparent url('../img/dash.png') 0 0 no-repeat;
 	float: left;
-	margin-left: 20px;
+	margin-left: 0px;
 	text-align: center;
 }
 
 .dash_top .digit {
 	font-family: "Museo Cyrl";
-	font-size: 5rem;
+	font-size: 3rem;
 	font-weight: normal;
 	float: left;
-	width: 55px;
+	width: 30px;
 	line-height: 55px;
 	padding-top: 15px;
 	text-align: center;
 	color: white;
 	position: relative;
+}
+
+@media (min-width: 23.5rem) {
+	.h2__time_top {
+		width: 55%;
+		font-size: 4.5rem;
+	}
+
+	.dash_top .digit {
+		font-size: 5rem;
+		width: 55px;
+	}
+
+	.dash_top {
+		position: relative;
+		width: 115px;
+		height: 114px;
+		margin-left: 20px;
+	}
 }
 
 #countdown_dashboard3 {
