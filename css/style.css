@@ -7,7 +7,7 @@
 @media (min-width:23.5rem) {
 	#countdown_dashboard, #countdown_dashboard2  {
 		width: 545px;
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		height: 110px;
 	}
 }
@@ -40,7 +40,7 @@
 	bottom: 0px;
 	right: 6px;
 	font-size: 9pt;
-	color: #555;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-family: "Museo Cyrl";
@@ -58,7 +58,7 @@
 .h2__time_top {
 	text-align: center;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 1rem;
 	color: white;
 	font-size: 2rem;
 }
