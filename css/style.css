@@ -109,6 +109,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	width: 100vw;
 	margin: 0 auto;
 	height: 90px;
@@ -121,26 +122,26 @@
 	margin: 0 auto;
 	color: black;
 	font-family: "MuseoCyrl500";
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-top: 2rem;
 }
 
 .dash_menu {
 	position: relative;
-	width: 115px;
-	height: 100%;
+	width: 75px;
+	height: 90px;
 	background: transparent url('../img/dash.png') 0 0 no-repeat;
 	float: left;
-	margin-left: 20px;
+	margin: 0 0.5rem;
 	text-align: center;
 }
 
 .dash_menu .digit {
 	font-family: "MuseoCyrl500";
-	font-size: 4.5rem;
+	font-size: 2.5rem;
 	font-weight: normal;
 	float: left;
-	width: 55px;
+	width: 30px;
 	line-height: 55px;
 	padding-top: 15px;
 	text-align: center;
