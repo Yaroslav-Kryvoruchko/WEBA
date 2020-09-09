@@ -309,7 +309,7 @@ html {
     color: #ededed;
     font-family: "MuseoCyrl500";
     font-size: 4.3rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     width: 600px;
     margin: 0;
     text-align: right;
@@ -687,7 +687,7 @@ html {
     background-color: #282828;
     color: white;
     font-size: 4rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     width: 600px;
     text-align: right;
     font-family: "MuseoCyrl500";
@@ -783,7 +783,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10rem auto 5rem auto;
+    margin: 10rem auto;
     width: 1000px;
     overflow: hidden;
     z-index: 2;
@@ -901,7 +901,7 @@ html {
     /* width: 100%; */
 }
 
-.cubes {
+/* .cubes {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -913,7 +913,29 @@ html {
     height: 16px;
     background-color: #acacac;
     margin: 0.5rem 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.cubes__item::before,
+.cubes__item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #acacac;
+    margin: 0.5rem 1rem;
+}
+
+.cubes__item::before {
+    transform: translateX(-30px);
+}
+
+.cubes__item::after {
+    transform: translateX(30px);
+} */
 
 #sec-4__mobile {
     width: 100%;
@@ -1123,7 +1145,7 @@ html {
     background-color: #282828;
     color: white;
     font-size: 4.3rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     width: 600px;
     text-align: right;
     font-family: "MuseoCyrl500";
@@ -1524,11 +1546,45 @@ html {
     font-weight: 300;
 }
 
-.quantity__mobile input {
-    width: 70px;
-    height: 26px;
-    font-size: 0.8rem;
+.quantity__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
+}
+
+#number__mobile {
+    font-family: "Eraslght";
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #9d9d9d;
+    background-color: white;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    margin: 0;
+}
+
+#plas__mobile {
+    font-family: "Eraslght";
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    background-color: #7900ff;
+    color: white;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+#minus__mobile {
+    font-family: "Eraslght";
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    background-color: #7900ff;
+    color: white;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
 }
 
 .tickets__bottom__mobile h1 {
@@ -1675,7 +1731,7 @@ html {
 }
 
 .footer_item_two--items {
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     list-style: none;
 }
 
@@ -1689,6 +1745,7 @@ html {
 
 .footer_item_two--items li {
     margin: 0.5rem 0;
+    width: 50px;
 }
 
 .footer_item_two button {
@@ -1781,6 +1838,10 @@ html {
     .footer_item_two--items a {
         font-size: 1.2rem;
         font-weight: 300;
+    }
+
+    .footer_item_two--items li {
+        width: 100%;
     }
 
     .footer_item_two button {

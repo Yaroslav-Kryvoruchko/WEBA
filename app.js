@@ -1,18 +1,10 @@
 let Plas = document.getElementById('plas');
 let Minus = document.getElementById('minus');
-let Number = document.getElementById('number');
+let Numbers = document.getElementById('number');
 const ErrorAlert = document.querySelector('.alert-message');
 
-// const Total = document.getElementById('total');
-
-// const totalSum = function () {
-//   let sum = i + 360;
-//   outputTotal(sum);
-// }
-
-// function outputTotal(sum) {
-//   Total.textContent = sum;
-// }
+const Total = document.getElementById('total');
+const tickets = 20;
 
 Plas.addEventListener('click', plas);
 Minus.addEventListener('click', minus);
@@ -22,25 +14,22 @@ let i = 0;
 function plas() {
     if(i <= 9) {
         i++;
-        out(i);
+        const totals = i * tickets;
+        out(i, totals);
     }
 }
 
 function minus() {
-    if(i <= 10) {
+    if(i >= 1) {
         i--;
-        out(i);
+        const totals = i * tickets;
+        out(i, totals);
     }
 }
 
-function out(result) {
-    Number.textContent = result;
-    if(result < 0) {
-      Number.textContent = 0;
-      ErrorAlert.classList.add('open-error');
-    } else if(result > 0) {
-      ErrorAlert.classList.remove('open-error');
-    }
+function out(result, total) {
+    Numbers.textContent = result;
+    Total.textContent = total + "$";
 }
 
 
@@ -137,13 +126,20 @@ BtnMaps.addEventListener('click', () => {
   } else {
     SectionMaps.classList.remove('open_maps');
     Maps.classList.remove('open_maps');
+    TitleBtn.textContent = "Open";
     openMaps = false;
   }
 })
 
-// comments 
+// input
 
-const ItemTwo = document.getElementById('two__item');
+const BtnSent = document.getElementById('btn_sent');
+
+
+BtnSent.addEventListener('click', () => {
+
+});
+
 
 
 

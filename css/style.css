@@ -22,8 +22,8 @@
 }
 
 .dash .digit {
-	font-family: "Museo Cyrl";
-	font-size: 5rem;
+	font-family: "MuseoCyrl500";
+	font-size: 4.5rem;
 	font-weight: normal;
 	float: left;
 	width: 55px;
@@ -43,7 +43,8 @@
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-family: "Museo Cyrl";
+	font-family: "MuseoCyrl500";
+	text-align: center;
 	width: 100%;
 }
 
@@ -51,6 +52,7 @@
 	text-align: left;
 	width: 100%;
 	margin: 2rem 0 0 3.5rem;
+	font-family: "MuseoCyrl500";
 	color: white;
 	font-size: 1.2rem;
 }
@@ -74,7 +76,7 @@
 }
 
 .dash_top .digit {
-	font-family: "Museo Cyrl";
+	font-family: "MuseoCyrl500";
 	font-size: 3rem;
 	font-weight: normal;
 	float: left;
@@ -82,7 +84,7 @@
 	line-height: 55px;
 	padding-top: 15px;
 	text-align: center;
-	color: white;
+	color: white;	
 	position: relative;
 }
 
@@ -93,7 +95,7 @@
 	}
 
 	.dash_top .digit {
-		font-size: 5rem;
+		font-size: 4.5rem;
 		width: 55px;
 	}
 
