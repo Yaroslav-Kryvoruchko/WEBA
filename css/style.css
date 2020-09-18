@@ -1,21 +1,30 @@
-#countdown_dashboard, #countdown_dashboard2  {
+/* #countdown_dashboard, #countdown_dashboard2  {
 	width: 100%;
-	margin: 0 1rem;
+	margin: 0 auto;
 	height: 50px;
-}
+} */
 
-@media (min-width:23.5rem) {
+/* @media (min-width:23.5rem) {
 	#countdown_dashboard, #countdown_dashboard2  {
 		width: 545px;
-		/* margin: 0 auto; */
+		margin: 0 auto;
 		height: 110px;
 	}
+} */
+
+#countdown_dashboard2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 55%;
+	/* background-color: black; */
+	margin: 2rem 1rem;
 }
 
 .dash {
 	width: 110px;
 	height: 114px;
-	background: transparent url('../img/dash.png') 0 0 no-repeat;
+	/* background: transparent url('../img/dash.png') 0 0 no-repeat; */
 	float: left;
 	margin-left: 20px;
 	position: relative;
@@ -59,28 +68,28 @@
 
 .h2__time_top {
 	text-align: center;
-	width: 100%;
+	width: 55%;
 	margin: 0 1rem;
 	color: white;
-	font-size: 2rem;
+	font-size: 4.5rem;
 }
 
 .dash_top {
 	position: relative;
-	width: 75px;
-	height: 90px;
+	width: 114px;
+	height: 110px;
 	background: transparent url('../img/dash.png') 0 0 no-repeat;
 	float: left;
-	margin-left: 0px;
+	/* margin: 0 auto; */
 	text-align: center;
 }
 
 .dash_top .digit {
 	font-family: "MuseoCyrl500";
-	font-size: 3rem;
+	font-size: 4.5rem;
 	font-weight: normal;
 	float: left;
-	width: 30px;
+	width: 50px;
 	line-height: 55px;
 	padding-top: 15px;
 	text-align: center;
@@ -88,7 +97,7 @@
 	position: relative;
 }
 
-@media (min-width: 23.5rem) {
+/* @media (min-width: 23.5rem) {
 	.h2__time_top {
 		width: 55%;
 		font-size: 4.5rem;
@@ -105,7 +114,7 @@
 		height: 114px;
 		margin-left: 20px;
 	}
-}
+} */
 
 #countdown_dashboard3 {
 	display: flex;
